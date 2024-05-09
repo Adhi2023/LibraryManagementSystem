@@ -1,0 +1,45 @@
+{
+	"name": "task1",
+	"properties": {
+		"activities": [
+			{
+				"name": "insert",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[InsertEmployeeTaxInMonthlySalary]",
+					"storedProcedureParameters": {
+						"@jsonData": {
+							"value": {
+								"value": "'{\"empno\": \"234\", \"salary\": 10000}'",
+								"type": "Expression"
+							},
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "TasksDatabaseLinkedService",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"@jsonData": {
+				"type": "string",
+				"defaultValue": "'{\"empno\": \"234\", \"salary\": 10000}'"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-05-09T06:37:40Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

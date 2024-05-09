@@ -1,0 +1,9 @@
+{
+	"name": "AdhiDataFactory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a73a1c6b-b4ef-46d7-9e8c-814bd98b7ebc",
+		"tenantId": "35b8288b-ccbe-4178-af8f-bf3ee1d6a7bf"
+	}
+}

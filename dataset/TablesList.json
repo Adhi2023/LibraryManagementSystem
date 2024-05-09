@@ -1,0 +1,13 @@
+{
+	"name": "TablesList",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "outputDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
